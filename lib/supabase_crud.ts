@@ -25,26 +25,3 @@ export async function createUsers(user: Users) {
     }
     return data;
 }
-
-// export async function updateDesert(desert_uuid: string, desert: Desert) {
-//     const { data, error } = await supabase
-//         .from(TABLE_NAME)
-//         .update(desert)
-//         .match({ desert_uuid });
-
-//     if (error) {
-//         throw error;
-//     }
-//     return data;
-// }
-
-// export async function deleteDesert(desert_uuid: string) {
-//     const { error } = await supabase
-//         .from(TABLE_NAME)
-//         .delete()
-//         .match({ desert_uuid });
-
-//     if (error) {
-//         throw error;
-//     }
-// }
